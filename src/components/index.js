@@ -1,1 +1,1 @@
-export { Button } from "./Button/Button";
+export { ButtonSheard } from "./Button/Button";
