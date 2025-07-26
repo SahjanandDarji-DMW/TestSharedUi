@@ -1,2 +1,1 @@
-import ButtonSharedUi from "./ButtonSharedUi";
-export { ButtonSharedUi };
+export * from "./components";
