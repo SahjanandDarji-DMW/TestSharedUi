@@ -1,20 +1,20 @@
 {
-  "name": "@sahjananddarjidmw/shared-ui",
+  "name": "@dmw/shared-ui",
   "version": "1.0.0",
   "description": "Shared UI components library",
   "type": "module",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js"
     },
+    "./style.css": "./dist/style.css",
     "./dist/style.css": "./dist/style.css"
   },
   "files": [
-    "dist",
-    "README.md"
+    "dist"
   ],
   "scripts": {
     "build": "vite build",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SahjanandDarji-DMW/TestSharedUi.git"
+    "url": "https://github.com/SahjanandDarji-DMW/TestSharedUi.git.git"
   }
 }
