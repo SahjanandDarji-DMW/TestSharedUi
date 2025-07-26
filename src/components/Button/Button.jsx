@@ -24,3 +24,5 @@ export const ButtonSheard = ({
     </button>
   );
 };
+
+export default ButtonSheard;
