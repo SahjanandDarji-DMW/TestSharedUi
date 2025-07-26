@@ -5,6 +5,9 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 export default defineConfig({
   plugins: [react(), peerDepsExternal()],
+  resolve: {
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
+  },
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.js"),
