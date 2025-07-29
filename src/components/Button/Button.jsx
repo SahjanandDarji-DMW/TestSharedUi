@@ -1,28 +1,34 @@
-import React from "react";
-import "./Button.css";
-
 export const ButtonSheard = ({
   children,
   variant = "primary",
   size = "medium",
   disabled = false,
+  loading = false,
+  startIcon,
+  endIcon,
   onClick,
   ...props
 }) => {
   const className = `shared-btn shared-btn--${variant} shared-btn--${size} ${
-    disabled ? "shared-btn--disabled" : ""
+    disabled || loading ? "shared-btn--disabled" : ""
   }`;
 
   return (
     <button
       className={className}
-      disabled={disabled}
+      disabled={disabled || loading}
       onClick={onClick}
       {...props}
     >
-      {children}
+      {loading ? (
+        <span className="loader" />
+      ) : (
+        <>
+          {startIcon && <span className="icon-start">{startIcon}</span>}
+          <span>{children}</span>
+          {endIcon && <span className="icon-end">{endIcon}</span>}
+        </>
+      )}
     </button>
   );
 };
-
-export default ButtonSheard;
