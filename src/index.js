@@ -1,2 +1,2 @@
 export * from "./components/index";
-export { default as ButtonSheard } from "./components/Button/Button";
+export { ButtonSheard } from "./components/Button/Button";
