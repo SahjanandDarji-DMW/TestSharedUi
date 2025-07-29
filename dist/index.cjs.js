@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const o=require("react/jsx-runtime");require("react");const d=({children:t,variant:r="primary",size:n="medium",disabled:e=!1,onClick:s,...a})=>{const u=`shared-btn shared-btn--${r} shared-btn--${n} ${e?"shared-btn--disabled":""}`;return o.jsx("button",{className:u,disabled:e,onClick:s,...a,children:t})};exports.ButtonSheard=d;
+//# sourceMappingURL=index.cjs.js.map
