@@ -51,7 +51,7 @@ const w5 = ({
   return /* @__PURE__ */ Dt(
     "div",
     {
-      className: `glass relative flex items-center gap-4 cursor-pointer transition-all duration-300 ${c || f ? "opacity-50 cursor-not-allowed" : ""} ${{
+      className: ` relative flex items-center gap-4 cursor-pointer transition-all duration-300 ${c || f ? "opacity-50 cursor-not-allowed" : ""} ${{
         primary: "bg-white shadow-md hover:shadow-lg rounded-xl border border-gray-100",
         secondary: "bg-gray-100 shadow-md hover:shadow-lg rounded-xl border border-gray-200"
       }[n]} ${k[o]}`,

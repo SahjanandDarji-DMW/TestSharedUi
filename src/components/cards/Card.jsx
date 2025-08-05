@@ -1,3 +1,5 @@
+import "./Card.css"; // Import CSS file
+
 export const CardShared = ({
   title,
   description,
@@ -27,7 +29,7 @@ export const CardShared = ({
 
   return (
     <div
-      className={`glass relative flex items-center gap-4 cursor-pointer transition-all duration-300 ${
+      className={` relative flex items-center gap-4 cursor-pointer transition-all duration-300 ${
         disabled || loading ? "opacity-50 cursor-not-allowed" : ""
       } ${variantClasses[variant]} ${sizeClasses[size]}`}
       onClick={!disabled && !loading ? onClick : undefined}

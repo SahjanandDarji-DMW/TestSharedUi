@@ -1,4 +1,5 @@
 // src/components/GlassCard.jsx
+import "./Card.css";
 export const GlassCard = () => {
   return (
     <div className="glass rounded-xl p-6 w-80">
