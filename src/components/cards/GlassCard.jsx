@@ -12,7 +12,7 @@ const avatar =
 
 export const GlassCard = () => {
   return (
-    <div className="glass-card">
+    <div className="glass">
       <div className="header">
         <h2>Team members</h2>
         <span className="see-all">See all</span>
