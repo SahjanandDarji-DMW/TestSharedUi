@@ -47,5 +47,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/SahjanandDarji-DMW/TestSharedUi.git"
+  },
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.10"
   }
 }
