@@ -1,5 +1,3 @@
-import "./Card.css";
-
 const members = [
   { name: "Chris Wood", status: "Online", color: "green", action: "Invite" },
   { name: "Jose Leos", status: "Busy", color: "orange", action: "Chat" },
