@@ -27,7 +27,7 @@ export const CardShared = ({
 
   return (
     <div
-      className={`relative flex items-center gap-4 cursor-pointer transition-all duration-300 ${
+      className={`glass relative flex items-center gap-4 cursor-pointer transition-all duration-300 ${
         disabled || loading ? "opacity-50 cursor-not-allowed" : ""
       } ${variantClasses[variant]} ${sizeClasses[size]}`}
       onClick={!disabled && !loading ? onClick : undefined}
