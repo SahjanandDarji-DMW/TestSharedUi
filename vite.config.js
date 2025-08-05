@@ -2,9 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [react(), peerDepsExternal()],
+  plugins: [react(), peerDepsExternal(), tailwindcss()],
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
