@@ -105,7 +105,7 @@ const _5 = ({
   { name: "Jose Leos", status: "Busy", color: "orange", action: "Chat" },
   { name: "Jeny Green", status: "Offline", color: "red", action: "Chat" },
   { name: "Neil Sims", status: "Online", color: "green", action: "Chat" }
-], hm = "https://img.freepik.com/free-vector/young-man-with-glasses-illustration_1308-174706.jpg?t=st=1754386698~exp=1754390298~hmac=45cd16df983417ddd1d4c8a180b1388b43616acd7cecc314ef6a3e506583b2f2&w=826", C5 = () => /* @__PURE__ */ rt("div", { className: "glass-card", children: [
+], hm = "https://img.freepik.com/free-vector/young-man-with-glasses-illustration_1308-174706.jpg?t=st=1754386698~exp=1754390298~hmac=45cd16df983417ddd1d4c8a180b1388b43616acd7cecc314ef6a3e506583b2f2&w=826", C5 = () => /* @__PURE__ */ rt("div", { className: "glass", children: [
   /* @__PURE__ */ rt("div", { className: "header", children: [
     /* @__PURE__ */ Ze("h2", { children: "Team members" }),
     /* @__PURE__ */ Ze("span", { className: "see-all", children: "See all" })
