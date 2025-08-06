@@ -17,7 +17,7 @@ export function CardShared({
     const baseClasses =
       variant === "horizontal"
         ? "bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between"
-        : "bg-gradient-to-r bg-gray-[F2F2F2] backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg";
+        : "bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg";
 
     return (
       <div className={`${baseClasses}  ${className}`}>
@@ -70,7 +70,7 @@ export function CardShared({
 
   // ✅ Original Vertical Layout
   return (
-    <div className="bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80">
+    <div className="bg-gradient-to-r bg-gray-[F2F2F2] backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80">
       {/* Icon and Title */}
       <div className="flex items-center space-x-3 mb-3">
         <div className="bg-[#2d004d] p-2 rounded-lg text-white">{icon}</div>

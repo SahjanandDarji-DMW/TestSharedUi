@@ -44,7 +44,7 @@ function bA({
   variant: m = "vertical"
   // "vertical" or "horizontal"
 }) {
-  return m === "horizontal" ? /* @__PURE__ */ wr("div", { className: `${m === "horizontal" ? "bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between" : "bg-gradient-to-r bg-gray-[F2F2F2] backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg"}  ${l}`, children: [
+  return m === "horizontal" ? /* @__PURE__ */ wr("div", { className: `${m === "horizontal" ? "bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between" : "bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg"}  ${l}`, children: [
     /* @__PURE__ */ wr("div", { className: "flex items-center space-x-4", children: [
       /* @__PURE__ */ $e("div", { className: "bg-[#2d004d] p-2 rounded-lg  text-white text-sm font-bold w-10 h-10 flex items-center justify-center", children: e }),
       /* @__PURE__ */ wr("div", { children: [
@@ -81,7 +81,7 @@ function bA({
         }
       )
     ] })
-  ] }) : /* @__PURE__ */ wr("div", { className: "bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80", children: [
+  ] }) : /* @__PURE__ */ wr("div", { className: "bg-gradient-to-r bg-gray-[F2F2F2] backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80", children: [
     /* @__PURE__ */ wr("div", { className: "flex items-center space-x-3 mb-3", children: [
       /* @__PURE__ */ $e("div", { className: "bg-[#2d004d] p-2 rounded-lg text-white", children: e }),
       /* @__PURE__ */ $e("h2", { className: "text-lg font-semibold text-black", children: t })
