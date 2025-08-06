@@ -85,7 +85,7 @@ export function CardShared({
       {/* Buttons */}
       <div className="flex items-center justify-between">
         <button
-          className="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-1.5 rounded-full shadow"
+          className="bg-white/10 hover:bg-white/20 text-white text-sm px-4 py-1.5 rounded-full shadow-lg backdrop-blur-md border border-white/30 transition duration-300"
           onClick={onPrimaryClick}
         >
           {primaryAction}
