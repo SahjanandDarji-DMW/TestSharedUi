@@ -9,7 +9,7 @@ export function CardShared({
   menuAction,
 }) {
   return (
-    <div className="bg-white/5 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80">
+    <div className="bg-gradient-to-r from-indigo-900/30 via-cyan-500/20 to-pink-500/30 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80">
       {/* Icon and Title */}
       <div className="flex items-center space-x-3 mb-3">
         <div className="bg-[#2d004d] p-2 rounded-lg">{icon}</div>
