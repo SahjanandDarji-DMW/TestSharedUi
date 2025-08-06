@@ -23833,7 +23833,7 @@ function xA({ tabs: e, avatarUrl: t }) {
             {
               value: w,
               onClick: () => n(w),
-              className: `px-4 py-2 transition-colors duration-300 ${r === w ? "text-white font-semibold" : "text-white/70"}`,
+              className: `px-4 py-2 transition-colors duration-300 ${r === w ? "text-white font-semibold" : "text-black"}`,
               children: m
             },
             w

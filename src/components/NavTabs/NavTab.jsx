@@ -34,7 +34,7 @@ export function NavTab({ tabs, avatarUrl }) {
                     className={`px-4 py-2 transition-colors duration-300 ${
                       activeTab === value
                         ? "text-white font-semibold"
-                        : "text-white/70"
+                        : "text-black"
                     }`}
                   >
                     {label}
