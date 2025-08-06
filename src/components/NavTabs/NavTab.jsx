@@ -20,7 +20,7 @@ export function NavTab({ tabs, avatarUrl }) {
           className="rounded-xl backdrop-blur-md bg-gray-200 border border-white/10 p-2 shadow-md flex items-center justify-between "
           indicatorProps={{
             className:
-              "bg-transparent border-b-2 border-white shadow-none rounded-none",
+              "bg-transparent border-b-2 border-black shadow-none rounded-none",
           }}
         >
           <div className="flex items-center justify-between w-full gap-4 text-black">
@@ -32,9 +32,7 @@ export function NavTab({ tabs, avatarUrl }) {
                     value={value}
                     onClick={() => setActiveTab(value)}
                     className={`px-4 py-2 transition-colors duration-300 ${
-                      activeTab === value
-                        ? "text-white font-semibold"
-                        : "text-black"
+                      activeTab === value ? " font-semibold" : "text-black"
                     }`}
                   >
                     {label}
