@@ -37,46 +37,53 @@ function vA({
   primaryAction: n,
   onPrimaryClick: o,
   menuAction: a,
-  statusColor: l = "green",
+  className: l,
+  statusColor: p = "green",
   // optional for horizontal layout
-  variant: p = "vertical"
+  variant: v = "vertical"
   // "vertical" or "horizontal"
 }) {
-  return p === "horizontal" ? /* @__PURE__ */ fr("div", { className: "bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between w-full max-w-2xl", children: [
-    /* @__PURE__ */ fr("div", { className: "flex items-center space-x-4", children: [
-      /* @__PURE__ */ Fe("div", { className: "bg-[#2d004d] p-2 rounded-lg text-white text-sm font-bold w-10 h-10 flex items-center justify-center", children: e }),
-      /* @__PURE__ */ fr("div", { children: [
-        /* @__PURE__ */ Fe("div", { className: "text-white font-medium", children: t }),
-        /* @__PURE__ */ fr("div", { className: "flex items-center space-x-2 text-sm", children: [
+  return v === "horizontal" ? /* @__PURE__ */ fr(
+    "div",
+    {
+      className: `bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between w-full max-w-2xl ${l}`,
+      children: [
+        /* @__PURE__ */ fr("div", { className: "flex items-center space-x-4", children: [
+          /* @__PURE__ */ Fe("div", { className: "bg-[#2d004d] p-2 rounded-lg text-white text-sm font-bold w-10 h-10 flex items-center justify-center", children: e }),
+          /* @__PURE__ */ fr("div", { children: [
+            /* @__PURE__ */ Fe("div", { className: "text-white font-medium", children: t }),
+            /* @__PURE__ */ fr("div", { className: "flex items-center space-x-2 text-sm", children: [
+              /* @__PURE__ */ Fe(
+                "span",
+                {
+                  className: `w-2 h-2 rounded-full ${p === "green" ? "bg-green-400" : p === "blue" ? "bg-blue-400" : "bg-gray-400"}`
+                }
+              ),
+              /* @__PURE__ */ Fe("span", { className: "text-white/80", children: r })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ fr("div", { className: "flex items-center space-x-2", children: [
           /* @__PURE__ */ Fe(
-            "span",
+            "button",
             {
-              className: `w-2 h-2 rounded-full ${l === "green" ? "bg-green-400" : l === "blue" ? "bg-blue-400" : "bg-gray-400"}`
+              className: `${n === "Update this app" ? "bg-blue-500 hover:bg-blue-600 text-white" : "bg-white/10 text-white border border-white/20"} text-sm px-4 py-1.5 rounded-full shadow`,
+              onClick: o,
+              children: n
             }
           ),
-          /* @__PURE__ */ Fe("span", { className: "text-white/80", children: r })
+          a && /* @__PURE__ */ Fe(
+            "button",
+            {
+              className: "text-white/60 hover:text-white text-xl px-2",
+              onClick: a,
+              children: "⋯"
+            }
+          )
         ] })
-      ] })
-    ] }),
-    /* @__PURE__ */ fr("div", { className: "flex items-center space-x-2", children: [
-      /* @__PURE__ */ Fe(
-        "button",
-        {
-          className: `${n === "Update this app" ? "bg-blue-500 hover:bg-blue-600 text-white" : "bg-white/10 text-white border border-white/20"} text-sm px-4 py-1.5 rounded-full shadow`,
-          onClick: o,
-          children: n
-        }
-      ),
-      a && /* @__PURE__ */ Fe(
-        "button",
-        {
-          className: "text-white/60 hover:text-white text-xl px-2",
-          onClick: a,
-          children: "⋯"
-        }
-      )
-    ] })
-  ] }) : /* @__PURE__ */ fr("div", { className: "bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80", children: [
+      ]
+    }
+  ) : /* @__PURE__ */ fr("div", { className: "bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80", children: [
     /* @__PURE__ */ fr("div", { className: "flex items-center space-x-3 mb-3", children: [
       /* @__PURE__ */ Fe("div", { className: "bg-[#2d004d] p-2 rounded-lg text-white", children: e }),
       /* @__PURE__ */ Fe("h2", { className: "text-lg font-semibold text-black", children: t })

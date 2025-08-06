@@ -7,13 +7,16 @@ export function CardShared({
   primaryAction,
   onPrimaryClick,
   menuAction,
+  className,
   statusColor = "green", // optional for horizontal layout
   variant = "vertical", // "vertical" or "horizontal"
 }) {
   // 🔁 Horizontal Layout (like the image)
   if (variant === "horizontal") {
     return (
-      <div className="bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between w-full max-w-2xl">
+      <div
+        className={`bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between w-full max-w-2xl ${className}`}
+      >
         {/* Icon + Title + Description */}
         <div className="flex items-center space-x-4">
           <div className="bg-[#2d004d] p-2 rounded-lg text-white text-sm font-bold w-10 h-10 flex items-center justify-center">
