@@ -49,8 +49,8 @@ export function CardShared({
             className={`${
               primaryAction === "Update this app"
                 ? "bg-blue-500 hover:bg-blue-600 text-white"
-                : "bg-white/10 text-white border border-white/20"
-            } text-sm px-4 py-1.5 rounded-full shadow`}
+                : "bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md shadow-lg"
+            } text-sm px-4 py-1.5 rounded-full transition duration-300`}
             onClick={onPrimaryClick}
           >
             {primaryAction}
@@ -78,7 +78,7 @@ export function CardShared({
       </div>
 
       {/* Description */}
-      <p className="text-sm text-gray-500 mb-6 whitespace-pre-line">
+      <p className="text-sm text-white mb-6 whitespace-pre-line">
         {description}
       </p>
 

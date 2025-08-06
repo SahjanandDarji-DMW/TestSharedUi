@@ -67,7 +67,7 @@ function bA({
       /* @__PURE__ */ $e(
         "button",
         {
-          className: `${n === "Update this app" ? "bg-blue-500 hover:bg-blue-600 text-white" : "bg-white/10 text-white border border-white/20"} text-sm px-4 py-1.5 rounded-full shadow`,
+          className: `${n === "Update this app" ? "bg-blue-500 hover:bg-blue-600 text-white" : "bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md shadow-lg"} text-sm px-4 py-1.5 rounded-full transition duration-300`,
           onClick: o,
           children: n
         }
@@ -86,7 +86,7 @@ function bA({
       /* @__PURE__ */ $e("div", { className: "bg-[#2d004d] p-2 rounded-lg text-white", children: e }),
       /* @__PURE__ */ $e("h2", { className: "text-lg font-semibold text-black", children: t })
     ] }),
-    /* @__PURE__ */ $e("p", { className: "text-sm text-gray-500 mb-6 whitespace-pre-line", children: r }),
+    /* @__PURE__ */ $e("p", { className: "text-sm text-white mb-6 whitespace-pre-line", children: r }),
     /* @__PURE__ */ wr("div", { className: "flex items-center justify-between", children: [
       /* @__PURE__ */ $e(
         "button",
