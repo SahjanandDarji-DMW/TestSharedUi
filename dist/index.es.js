@@ -23898,7 +23898,7 @@ function xA({ tabs: e, avatarUrl: t }) {
                     onClick: () => {
                       a(!1), p("");
                     },
-                    className: "text-white hover:text-white/80",
+                    className: "text-black ",
                     children: /* @__PURE__ */ Fe(No, { icon: fA, className: "h-5 w-5" })
                   }
                 )

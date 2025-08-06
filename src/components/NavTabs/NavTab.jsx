@@ -63,7 +63,7 @@ export function NavTab({ tabs, avatarUrl }) {
                     setSearchMode(false);
                     setSearchQuery("");
                   }}
-                  className="text-white hover:text-white/80"
+                  className="text-black "
                 >
                   <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
                 </button>
