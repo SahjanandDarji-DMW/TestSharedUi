@@ -23850,7 +23850,7 @@ function mA({ tabs: e, avatarUrl: t, tabTextColor: r }) {
       {
         className: "rounded-xl backdrop-blur-md bg-gray-[F2F2F2] border border-white/10 p-2 shadow-md flex items-center justify-between ",
         indicatorProps: {
-          className: "bg-transparent border-b-2 border-black shadow-none rounded-none"
+          className: `bg-transparent border-b-2 ${r} shadow-none rounded-none`
         },
         children: /* @__PURE__ */ wr(
           "div",

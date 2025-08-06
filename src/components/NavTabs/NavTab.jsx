@@ -20,8 +20,7 @@ export function NavTab({ tabs, avatarUrl, tabTextColor }) {
         <TabsHeader
           className="rounded-xl backdrop-blur-md bg-gray-[F2F2F2] border border-white/10 p-2 shadow-md flex items-center justify-between "
           indicatorProps={{
-            className:
-              "bg-transparent border-b-2 border-black shadow-none rounded-none",
+            className: `bg-transparent border-b-2 ${tabTextColor} shadow-none rounded-none`,
           }}
         >
           <div
