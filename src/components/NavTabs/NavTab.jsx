@@ -17,7 +17,7 @@ export function NavTab({ tabs, avatarUrl }) {
     <div className="w-full max-w-5xl mx-auto mt-10">
       <Tabs value={activeTab}>
         <TabsHeader
-          className="rounded-xl backdrop-blur-md bg-gray-200 border border-white/10 p-2 shadow-md flex items-center justify-between "
+          className="rounded-xl backdrop-blur-md bg-gray-100 border border-white/10 p-2 shadow-md flex items-center justify-between "
           indicatorProps={{
             className:
               "bg-transparent border-b-2 border-black shadow-none rounded-none",
@@ -72,13 +72,16 @@ export function NavTab({ tabs, avatarUrl }) {
 
             {/* Right Icons */}
             <div className="flex items-center gap-4">
-              <button className="relative text-white hover:text-white/80">
+              <button className="relative text-black cursor-pointer">
                 <FontAwesomeIcon icon={faBell} className="h-5 w-5" />
                 <span className="absolute -top-1 -right-2 bg-blue-500 text-white text-xs rounded-full px-1">
                   3
                 </span>
               </button>
-              <FontAwesomeIcon icon={faCloud} className="h-5 w-5 text-white" />
+              <FontAwesomeIcon
+                icon={faCloud}
+                className="h-5 w-5 text-black cursor-pointer"
+              />
               <img
                 src={avatarUrl}
                 alt="Avatar"

@@ -63,10 +63,10 @@ export function CardShared({
   // }
 
   return (
-    <div className="bg-gradient-to-r bg-gray-200 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80 ">
+    <div className="bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80 ">
       {/* Icon and Title */}
       <div className="flex items-center space-x-3 mb-3">
-        <div className="bg-[#2d004d] p-2 rounded-lg">{icon}</div>
+        <div className="bg-[#2d004d] p-2 rounded-lg text-white  ">{icon}</div>
         <h2 className="text-lg font-semibold text-black">{title}</h2>
       </div>
 

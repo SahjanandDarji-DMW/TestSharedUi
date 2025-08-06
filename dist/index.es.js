@@ -38,9 +38,9 @@ function vA({
   onPrimaryClick: o,
   menuAction: a
 }) {
-  return /* @__PURE__ */ kr("div", { className: "bg-gradient-to-r bg-gray-200 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80 ", children: [
+  return /* @__PURE__ */ kr("div", { className: "bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80 ", children: [
     /* @__PURE__ */ kr("div", { className: "flex items-center space-x-3 mb-3", children: [
-      /* @__PURE__ */ $e("div", { className: "bg-[#2d004d] p-2 rounded-lg", children: e }),
+      /* @__PURE__ */ $e("div", { className: "bg-[#2d004d] p-2 rounded-lg text-white  ", children: e }),
       /* @__PURE__ */ $e("h2", { className: "text-lg font-semibold text-black", children: t })
     ] }),
     /* @__PURE__ */ $e("p", { className: "text-sm text-gray-500 mb-6 whitespace-pre-line", children: r }),
@@ -23823,7 +23823,7 @@ function xA({ tabs: e, avatarUrl: t }) {
     /* @__PURE__ */ $e(
       rn.TabsHeader,
       {
-        className: "rounded-xl backdrop-blur-md bg-gray-200 border border-white/10 p-2 shadow-md flex items-center justify-between ",
+        className: "rounded-xl backdrop-blur-md bg-gray-100 border border-white/10 p-2 shadow-md flex items-center justify-between ",
         indicatorProps: {
           className: "bg-transparent border-b-2 border-black shadow-none rounded-none"
         },
@@ -23868,11 +23868,17 @@ function xA({ tabs: e, avatarUrl: t }) {
             }
           ),
           /* @__PURE__ */ kr("div", { className: "flex items-center gap-4", children: [
-            /* @__PURE__ */ kr("button", { className: "relative text-white hover:text-white/80", children: [
+            /* @__PURE__ */ kr("button", { className: "relative text-black cursor-pointer", children: [
               /* @__PURE__ */ $e(No, { icon: sA, className: "h-5 w-5" }),
               /* @__PURE__ */ $e("span", { className: "absolute -top-1 -right-2 bg-blue-500 text-white text-xs rounded-full px-1", children: "3" })
             ] }),
-            /* @__PURE__ */ $e(No, { icon: uA, className: "h-5 w-5 text-white" }),
+            /* @__PURE__ */ $e(
+              No,
+              {
+                icon: uA,
+                className: "h-5 w-5 text-black cursor-pointer"
+              }
+            ),
             /* @__PURE__ */ $e(
               "img",
               {
