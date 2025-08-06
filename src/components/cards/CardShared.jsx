@@ -7,66 +7,66 @@ export function CardShared({
   primaryAction,
   onPrimaryClick,
   menuAction,
+  statusColor = "green", // optional for horizontal layout
+  variant = "vertical", // "vertical" or "horizontal"
 }) {
-  // .app-card {
-  //  background-color: var(--content-bg);
-  //  border-radius: 14px;
-  //  border: 1px solid var(--theme-bg-color);
-  //  padding: 20px;
-  //  cursor: pointer;
-  //  transition: 0.3s ease;
-  //  &:hover {
-  //   transform: scale(1.02);
-  //   background-color: var(--theme-bg-color);
-  //  }
-  //  svg {
-  //   width: 28px;
-  //   border-radius: 6px;
-  //   margin-right: 12px;
-  //   flex-shrink: 0;
-  //  }
-  //  & + .app-card {
-  //   margin-left: 20px;
-  //  }
-  //  span {
-  //   display: flex;
-  //   align-items: center;
-  //  }
-  //  &__subtext {
-  //   font-size: 14px;
-  //   font-weight: 400;
-  //   line-height: 1.6em;
-  //   margin-top: 20px;
-  //   border-bottom: 1px solid var(--border-color);
-  //   padding-bottom: 20px;
-  //  }
-  //  &-buttons {
-  //   display: flex;
-  //   align-items: center;
-  //   margin-left: auto;
-  //   margin-top: 16px;
-  //  }
-  //  @media screen and (max-width: 1110px) {
-  //   width: calc(50% - 20px);
-  //   &:last-child {
-  //    margin-top: 20px;
-  //    margin-left: 0px;
-  //   }
-  //  }
-  //  @media screen and (max-width: 565px) {
-  //   width: calc(100% - 20px);
-  //   margin-top: 20px;
-  //   & + .app-card {
-  //    margin-left: 0;
-  //   }
-  //  }
-  // }
+  // 🔁 Horizontal Layout (like the image)
+  if (variant === "horizontal") {
+    return (
+      <div className="bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between w-full max-w-2xl">
+        {/* Icon + Title + Description */}
+        <div className="flex items-center space-x-4">
+          <div className="bg-[#2d004d] p-2 rounded-lg text-white text-sm font-bold w-10 h-10 flex items-center justify-center">
+            {icon}
+          </div>
+          <div>
+            <div className="text-white font-medium">{title}</div>
+            <div className="flex items-center space-x-2 text-sm">
+              <span
+                className={`w-2 h-2 rounded-full ${
+                  statusColor === "green"
+                    ? "bg-green-400"
+                    : statusColor === "blue"
+                    ? "bg-blue-400"
+                    : "bg-gray-400"
+                }`}
+              ></span>
+              <span className="text-white/80">{description}</span>
+            </div>
+          </div>
+        </div>
 
+        {/* Buttons */}
+        <div className="flex items-center space-x-2">
+          <button
+            className={`${
+              primaryAction === "Update this app"
+                ? "bg-blue-500 hover:bg-blue-600 text-white"
+                : "bg-white/10 text-white border border-white/20"
+            } text-sm px-4 py-1.5 rounded-full shadow`}
+            onClick={onPrimaryClick}
+          >
+            {primaryAction}
+          </button>
+          {menuAction && (
+            <button
+              className="text-white/60 hover:text-white text-xl px-2"
+              onClick={menuAction}
+            >
+              ⋯
+            </button>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ✅ Original Vertical Layout
   return (
-    <div className="bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80 ">
+    <div className="bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80">
       {/* Icon and Title */}
       <div className="flex items-center space-x-3 mb-3">
-        <div className="bg-[#2d004d] p-2 rounded-lg text-white  ">{icon}</div>
+        <div className="bg-[#2d004d] p-2 rounded-lg text-white">{icon}</div>
         <h2 className="text-lg font-semibold text-black">{title}</h2>
       </div>
 
