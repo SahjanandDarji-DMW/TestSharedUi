@@ -46,7 +46,7 @@ function vA({
   return v === "horizontal" ? /* @__PURE__ */ fr(
     "div",
     {
-      className: `bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between w-full max-w-2xl ${l}`,
+      className: `bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between w-full  ${l}`,
       children: [
         /* @__PURE__ */ fr("div", { className: "flex items-center space-x-4", children: [
           /* @__PURE__ */ Fe("div", { className: "bg-[#2d004d] p-2 rounded-lg text-white text-sm font-bold w-10 h-10 flex items-center justify-center", children: e }),
