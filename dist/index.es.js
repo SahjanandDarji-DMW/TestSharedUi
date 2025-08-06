@@ -67,7 +67,7 @@ function bA({
       /* @__PURE__ */ $e(
         "button",
         {
-          className: `${n === "Update this app" ? "bg-blue-500 hover:bg-blue-600 text-white" : "bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md shadow-lg"} text-sm px-4 py-1.5 rounded-full transition duration-300`,
+          className: `${n === "Update this app" ? "bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md shadow-lg" : "bg-blue-500 hover:bg-blue-600 text-white"} text-sm px-4 py-1.5 rounded-full transition duration-300`,
           onClick: o,
           children: n
         }
