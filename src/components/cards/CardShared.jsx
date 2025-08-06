@@ -8,22 +8,26 @@ export function CardShared({
   onPrimaryClick,
   menuAction,
   className,
+  textColor,
   statusColor = "green", // optional for horizontal layout
   variant = "vertical", // "vertical" or "horizontal"
 }) {
   // 🔁 Horizontal Layout (like the image)
   if (variant === "horizontal") {
+    const baseClasses =
+      variant === "horizontal"
+        ? "bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between"
+        : "bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg";
+
     return (
-      <div
-        className={`bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between w-full  ${className}`}
-      >
+      <div className={`${baseClasses}  ${className}`}>
         {/* Icon + Title + Description */}
         <div className="flex items-center space-x-4">
           <div className="bg-[#2d004d] p-2 rounded-lg text-white text-sm font-bold w-10 h-10 flex items-center justify-center">
             {icon}
           </div>
           <div>
-            <div className="text-white font-medium">{title}</div>
+            <div className={`${textColor} font-medium`}>{title}</div>
             <div className="flex items-center space-x-2 text-sm">
               <span
                 className={`w-2 h-2 rounded-full ${
@@ -34,7 +38,7 @@ export function CardShared({
                     : "bg-gray-400"
                 }`}
               ></span>
-              <span className="text-white/80">{description}</span>
+              <span className={` ${textColor} `}> {description}</span>
             </div>
           </div>
         </div>
