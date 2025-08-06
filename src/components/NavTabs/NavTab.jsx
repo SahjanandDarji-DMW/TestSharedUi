@@ -17,13 +17,13 @@ export function NavTab({ tabs, avatarUrl }) {
     <div className="w-full max-w-5xl mx-auto mt-10">
       <Tabs value={activeTab}>
         <TabsHeader
-          className="rounded-xl backdrop-blur-md bg-gray-200 border border-white/10 p-2 shadow-md flex items-center justify-between"
+          className="rounded-xl backdrop-blur-md bg-gray-200 border border-white/10 p-2 shadow-md flex items-center justify-between "
           indicatorProps={{
             className:
               "bg-transparent border-b-2 border-white shadow-none rounded-none",
           }}
         >
-          <div className="flex items-center justify-between w-full gap-4">
+          <div className="flex items-center justify-between w-full gap-4 text-black">
             {!searchMode ? (
               <div className="flex gap-4 items-center">
                 {tabs.map(({ label, value }) => (

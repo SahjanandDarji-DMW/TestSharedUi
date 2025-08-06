@@ -38,12 +38,12 @@ function vA({
   onPrimaryClick: o,
   menuAction: a
 }) {
-  return /* @__PURE__ */ kr("div", { className: "bg-gradient-to-r bg-gray-200 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80", children: [
+  return /* @__PURE__ */ kr("div", { className: "bg-gradient-to-r bg-gray-200 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80 ", children: [
     /* @__PURE__ */ kr("div", { className: "flex items-center space-x-3 mb-3", children: [
       /* @__PURE__ */ $e("div", { className: "bg-[#2d004d] p-2 rounded-lg", children: e }),
-      /* @__PURE__ */ $e("h2", { className: "text-lg font-semibold text-white", children: t })
+      /* @__PURE__ */ $e("h2", { className: "text-lg font-semibold text-black", children: t })
     ] }),
-    /* @__PURE__ */ $e("p", { className: "text-sm text-gray-300 mb-6 whitespace-pre-line", children: r }),
+    /* @__PURE__ */ $e("p", { className: "text-sm text-gray-500 mb-6 whitespace-pre-line", children: r }),
     /* @__PURE__ */ kr("div", { className: "flex items-center justify-between", children: [
       /* @__PURE__ */ $e(
         "button",
@@ -23823,11 +23823,11 @@ function xA({ tabs: e, avatarUrl: t }) {
     /* @__PURE__ */ $e(
       rn.TabsHeader,
       {
-        className: "rounded-xl backdrop-blur-md bg-gray-200 border border-white/10 p-2 shadow-md flex items-center justify-between",
+        className: "rounded-xl backdrop-blur-md bg-gray-200 border border-white/10 p-2 shadow-md flex items-center justify-between ",
         indicatorProps: {
           className: "bg-transparent border-b-2 border-white shadow-none rounded-none"
         },
-        children: /* @__PURE__ */ kr("div", { className: "flex items-center justify-between w-full gap-4", children: [
+        children: /* @__PURE__ */ kr("div", { className: "flex items-center justify-between w-full gap-4 text-black", children: [
           o ? /* @__PURE__ */ $e("div", { className: "flex-grow" }) : /* @__PURE__ */ $e("div", { className: "flex gap-4 items-center", children: e.map(({ label: m, value: w }) => /* @__PURE__ */ $e(
             rn.Tab,
             {
