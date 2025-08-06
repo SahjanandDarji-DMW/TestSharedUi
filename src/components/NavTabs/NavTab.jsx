@@ -8,8 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faCloud, faTimes } from "@fortawesome/free-solid-svg-icons";
-
-const NavTabs = ({ tabs, avatarUrl }) => {
+export function NavTab({ tabs, avatarUrl }) {
   const [activeTab, setActiveTab] = useState(tabs[0]?.value || "");
   const [searchMode, setSearchMode] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -101,6 +100,4 @@ const NavTabs = ({ tabs, avatarUrl }) => {
       </Tabs>
     </div>
   );
-};
-
-export default NavTabs;
+}

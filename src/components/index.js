@@ -3,7 +3,7 @@ import { CardShared } from "./cards/CardShared";
 import { ModalShared } from "./Modal/Modal";
 import { GlassCard } from "./cards/GlassCard";
 import { GlassButton } from "./Button/GlassButton";
-import { NavTabs } from "./NavTabs/index";
+import { NavTab } from "./NavTabs/NavTab";
 
 export {
   ButtonSheard,
@@ -11,5 +11,5 @@ export {
   ModalShared,
   GlassCard,
   GlassButton,
-  NavTabs,
+  NavTab,
 };
