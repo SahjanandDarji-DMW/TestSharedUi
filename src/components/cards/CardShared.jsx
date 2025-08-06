@@ -74,7 +74,7 @@ export function CardShared({
       {/* Icon and Title */}
       <div className="flex items-center space-x-3 mb-3">
         <div className="bg-[#2d004d] p-2 rounded-lg text-white">{icon}</div>
-        <h2 className="text-lg font-semibold text-black">{title}</h2>
+        <h2 className={` ${textColor} text-lg font-semibold `}>{title}</h2>
       </div>
 
       {/* Description */}
