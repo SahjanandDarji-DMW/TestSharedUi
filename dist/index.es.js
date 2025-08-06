@@ -23889,7 +23889,7 @@ function mA({ tabs: e, avatarUrl: t, tabTextColor: r }) {
                         onClick: () => {
                           l(!1), v("");
                         },
-                        className: "text-black ",
+                        className: `${r}`,
                         children: /* @__PURE__ */ $e(No, { icon: uA, className: "h-5 w-5" })
                       }
                     )

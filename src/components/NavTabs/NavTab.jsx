@@ -65,7 +65,7 @@ export function NavTab({ tabs, avatarUrl, tabTextColor }) {
                     setSearchMode(false);
                     setSearchQuery("");
                   }}
-                  className="text-black "
+                  className={`${tabTextColor}`}
                 >
                   <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
                 </button>
