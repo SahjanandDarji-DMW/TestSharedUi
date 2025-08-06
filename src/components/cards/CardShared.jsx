@@ -17,7 +17,7 @@ export function CardShared({
     const baseClasses =
       variant === "horizontal"
         ? "bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between"
-        : "bg-gradient-to-r bg-gray-50 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg";
+        : "bg-gradient-to-r bg-gray-[F2F2F2] backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg";
 
     return (
       <div className={`${baseClasses}  ${className}`}>

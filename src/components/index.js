@@ -1,15 +1,7 @@
 import { ButtonSheard } from "./Button/Button";
 import { CardShared } from "./cards/CardShared";
 import { ModalShared } from "./Modal/Modal";
-import { GlassCard } from "./cards/GlassCard";
 import { GlassButton } from "./Button/GlassButton";
 import { NavTab } from "./NavTabs/NavTab";
 
-export {
-  ButtonSheard,
-  CardShared,
-  ModalShared,
-  GlassCard,
-  GlassButton,
-  NavTab,
-};
+export { ButtonSheard, CardShared, ModalShared, GlassButton, NavTab };
