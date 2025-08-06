@@ -44,9 +44,9 @@ function vA({
   variant: m = "vertical"
   // "vertical" or "horizontal"
 }) {
-  return m === "horizontal" ? /* @__PURE__ */ fr("div", { className: `${m === "horizontal" ? "bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between" : "bg-gradient-to-r bg-gray-100 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg"}  ${l}`, children: [
+  return m === "horizontal" ? /* @__PURE__ */ fr("div", { className: `${m === "horizontal" ? "bg-white/5 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center justify-between" : "bg-gradient-to-r bg-gray-50 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg"}  ${l}`, children: [
     /* @__PURE__ */ fr("div", { className: "flex items-center space-x-4", children: [
-      /* @__PURE__ */ Ve("div", { className: "bg-[#2d004d] p-2 rounded-lg text-white text-sm font-bold w-10 h-10 flex items-center justify-center", children: e }),
+      /* @__PURE__ */ Ve("div", { className: "bg-[#2d004d] p-2 rounded-lg  text-white text-sm font-bold w-10 h-10 flex items-center justify-center", children: e }),
       /* @__PURE__ */ fr("div", { children: [
         /* @__PURE__ */ Ve("div", { className: `${p} font-medium`, children: t }),
         /* @__PURE__ */ fr("div", { className: "flex items-center space-x-2 text-sm", children: [
@@ -23866,7 +23866,7 @@ function xA({ tabs: e, avatarUrl: t }) {
     /* @__PURE__ */ Ve(
       rn.TabsHeader,
       {
-        className: "rounded-xl backdrop-blur-md bg-gray-100 border border-white/10 p-2 shadow-md flex items-center justify-between ",
+        className: "rounded-xl backdrop-blur-md bg-gray-[F2F2F2] border border-white/10 p-2 shadow-md flex items-center justify-between ",
         indicatorProps: {
           className: "bg-transparent border-b-2 border-black shadow-none rounded-none"
         },
