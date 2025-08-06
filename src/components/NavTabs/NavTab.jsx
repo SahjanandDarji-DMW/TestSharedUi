@@ -96,7 +96,11 @@ export function NavTab({ tabs, avatarUrl, tabTextColor }) {
         <TabsBody>
           {tabs.map(({ value, desc }) => (
             <TabPanel key={value} value={value}>
-              <p className="whitespace-pre-line text-gray-800">{desc}</p>
+              <p
+                className={`whitespace-pre-line ${tabTextColor} text-gray-800`}
+              >
+                {desc}
+              </p>
             </TabPanel>
           ))}
         </TabsBody>

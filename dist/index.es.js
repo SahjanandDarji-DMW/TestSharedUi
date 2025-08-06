@@ -23922,7 +23922,13 @@ function mA({ tabs: e, avatarUrl: t, tabTextColor: r }) {
         )
       }
     ),
-    /* @__PURE__ */ $e(rn.TabsBody, { children: e.map(({ value: w, desc: T }) => /* @__PURE__ */ $e(rn.TabPanel, { value: w, children: /* @__PURE__ */ $e("p", { className: "whitespace-pre-line text-gray-800", children: T }) }, w)) })
+    /* @__PURE__ */ $e(rn.TabsBody, { children: e.map(({ value: w, desc: T }) => /* @__PURE__ */ $e(rn.TabPanel, { value: w, children: /* @__PURE__ */ $e(
+      "p",
+      {
+        className: `whitespace-pre-line ${r} text-gray-800`,
+        children: T
+      }
+    ) }, w)) })
   ] }) });
 }
 export {
