@@ -1,14 +1,13 @@
-import React from "react";
 import { Select, Option } from "@material-tailwind/react";
 
-const DDropDown = ({
+export function DDropDown({
   label = "Select Option",
   options = [],
   value,
   onChange,
   placeholder = "Choose...",
   className = "",
-}) => {
+}) {
   return (
     <div className={`w-full ${className}`}>
       {label && (
@@ -37,6 +36,4 @@ const DDropDown = ({
       </Select>
     </div>
   );
-};
-
-export default DDropDown;
+}

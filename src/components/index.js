@@ -5,6 +5,7 @@ import { GlassButton } from "./Button/GlassButton";
 import { NavTab } from "./NavTabs/NavTab";
 import { SidebarItem } from "./DSidebarItem/index";
 import { Menu } from "./DSidebarItem/Menu";
+import { DDropDown } from "./DDropDown/index";
 
 export {
   ButtonSheard,
@@ -14,4 +15,5 @@ export {
   NavTab,
   SidebarItem,
   Menu,
+  DDropDown,
 };
