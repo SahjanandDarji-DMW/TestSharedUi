@@ -12,9 +12,9 @@ import {
   faChartLine,
   faGamepad,
 } from "@fortawesome/free-solid-svg-icons";
-import SidebarItem from "./index";
+import { SidebarItem } from "./index";
 
-const Menu = () => {
+export function Menu() {
   return (
     <div className="w-64 h-[500px] bg-gray-[#F2F2F2] backdrop-blur-md text-white p-4 rounded-xl shadow-lg">
       <div className="h-full overflow-y-auto custom-scrollbar pr-2">
@@ -66,6 +66,4 @@ const Menu = () => {
       </div>
     </div>
   );
-};
-
-export default Menu;
+}

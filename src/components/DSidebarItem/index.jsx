@@ -1,7 +1,7 @@
 // src/Components/Sidebar/SidebarItem.jsx
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const SidebarItem = ({ icon, label, badge }) => {
+export function SidebarItem({ icon, label, badge }) {
   return (
     <li className="flex items-center justify-between px-4 py-2 rounded-lg bg-gray-[#F2F2F2] backdrop-blur-md ">
       <div className="flex items-center gap-3">
@@ -15,6 +15,4 @@ const SidebarItem = ({ icon, label, badge }) => {
       )}
     </li>
   );
-};
-
-export default SidebarItem;
+}

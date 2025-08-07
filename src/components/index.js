@@ -3,5 +3,15 @@ import { CardShared } from "./cards/CardShared";
 import { ModalShared } from "./Modal/Modal";
 import { GlassButton } from "./Button/GlassButton";
 import { NavTab } from "./NavTabs/NavTab";
+import { SidebarItem } from "./DSidebarItem/index";
+import { Menu } from "./DSidebarItem/Menu";
 
-export { ButtonSheard, CardShared, ModalShared, GlassButton, NavTab };
+export {
+  ButtonSheard,
+  CardShared,
+  ModalShared,
+  GlassButton,
+  NavTab,
+  SidebarItem,
+  Menu,
+};
