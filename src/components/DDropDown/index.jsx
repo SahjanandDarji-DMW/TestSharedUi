@@ -16,7 +16,7 @@ export function DDropDown({
 
   // Scroll if more than 5 options (excluding placeholder)
   const scrollClass =
-    options.length > 5
+    options.length > 3
       ? "max-h-60 overflow-y-auto custom-scrollbar"
       : "max-h-fit";
 
@@ -28,9 +28,10 @@ export function DDropDown({
       <Select
         value={value}
         onChange={onChange}
+        label={value ? undefined : placeholder} // Show placeholder only when no value
         className="!border !border-white/20 !rounded-xl !bg-white/10 !backdrop-blur-md !text-white focus:!border-white/30"
         labelProps={{
-          className: "hidden",
+          className: "text-white/50",
         }}
         menuProps={{
           className: `bg-gray-[#F2F2F2] backdrop-blur-md text-white rounded-md ${scrollClass}`,

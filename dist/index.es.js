@@ -24015,7 +24015,7 @@ function IM({
   const l = [
     { label: o, value: "", disabled: !0 },
     ...t
-  ], p = t.length > 5 ? "max-h-60 overflow-y-auto custom-scrollbar" : "max-h-fit";
+  ], p = t.length > 3 ? "max-h-60 overflow-y-auto custom-scrollbar" : "max-h-fit";
   return /* @__PURE__ */ tr("div", { className: `w-full ${a}`, children: [
     e && /* @__PURE__ */ Ce("label", { className: "block mb-1 text-sm text-white/80", children: e }),
     /* @__PURE__ */ Ce(
@@ -24023,9 +24023,10 @@ function IM({
       {
         value: r,
         onChange: n,
+        label: r ? void 0 : o,
         className: "!border !border-white/20 !rounded-xl !bg-white/10 !backdrop-blur-md !text-white focus:!border-white/30",
         labelProps: {
-          className: "hidden"
+          className: "text-white/50"
         },
         menuProps: {
           className: `bg-gray-[#F2F2F2] backdrop-blur-md text-white rounded-md ${p}`
