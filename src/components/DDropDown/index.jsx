@@ -1,5 +1,4 @@
 import { Select, Option } from "@material-tailwind/react";
-import "../DSidebarItem/Scrollbar.css";
 export function DDropDown({
   label = "Select Option",
   options = [],
@@ -8,15 +7,8 @@ export function DDropDown({
   placeholder = "Choose...",
   className = "",
 }) {
-  // Inject placeholder as a disabled option
-  const finalOptions = [
-    { label: placeholder, value: "", disabled: true },
-    ...options,
-  ];
-
-  // Scroll if more than 5 options (excluding placeholder)
   const scrollClass =
-    options.length > 3
+    options.length > 5
       ? "max-h-60 overflow-y-auto custom-scrollbar"
       : "max-h-fit";
 
@@ -28,10 +20,10 @@ export function DDropDown({
       <Select
         value={value}
         onChange={onChange}
-        label={value ? undefined : placeholder} // Show placeholder only when no value
-        className="!border !border-white/20 !rounded-xl !bg-white/10 !backdrop-blur-md !text-white focus:!border-white/30"
+        label={placeholder}
+        className="!border !border-transparent focus:!border-white !rounded-xl !bg-white/10 !backdrop-blur-md !text-white !shadow-none placeholder:!opacity-100 transition-all duration-200"
         labelProps={{
-          className: "hidden",
+          className: "text-white/50",
         }}
         menuProps={{
           className: `bg-gray-[#F2F2F2] backdrop-blur-md text-white rounded-md ${scrollClass}`,
@@ -40,13 +32,8 @@ export function DDropDown({
           className: "!border-none !shadow-none",
         }}
       >
-        {finalOptions.map((opt, idx) => (
-          <Option
-            key={idx}
-            value={opt.value}
-            disabled={opt.disabled}
-            className="bg-gray-[#F2F2F2]"
-          >
+        {options.map((opt, idx) => (
+          <Option key={idx} value={opt.value}>
             {opt.label}
           </Option>
         ))}
