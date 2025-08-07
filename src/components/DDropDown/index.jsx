@@ -8,28 +8,42 @@ export function DDropDown({
   placeholder = "Choose...",
   className = "",
 }) {
+  // Inject placeholder as a disabled option
+  const finalOptions = [
+    { label: placeholder, value: "", disabled: true },
+    ...options,
+  ];
+
+  // Scroll if more than 5 options (excluding placeholder)
+  const scrollClass =
+    options.length > 5 ? "max-h-60 overflow-y-auto" : "max-h-fit";
+
   return (
     <div className={`w-full ${className}`}>
       {label && (
-        <label className="block mb-1  text-sm text-white/80">{label}</label>
+        <label className="block mb-1 text-sm text-white/80">{label}</label>
       )}
       <Select
-        label={placeholder}
         value={value}
         onChange={onChange}
-        className="!border !border-white/20 !rounded-xl !bg-white/10 !backdrop-blur-md !text-white placeholder:!opacity-100 focus:!border-white/30"
+        className="!border !border-white/20 !rounded-xl !bg-white/10 !backdrop-blur-md !text-white focus:!border-white/30"
         labelProps={{
           className: "hidden",
         }}
         menuProps={{
-          className: "bg-gray-[#F2F2F2] backdrop-blur-md text-white rounded-md",
+          className: `bg-gray-[#F2F2F2] backdrop-blur-md text-white rounded-md ${scrollClass}`,
         }}
         containerProps={{
           className: "!border-none !shadow-none",
         }}
       >
-        {options.map((opt, idx) => (
-          <Option key={idx} value={opt.value} className="bg-gray-[#F2F2F2]">
+        {finalOptions.map((opt, idx) => (
+          <Option
+            key={idx}
+            value={opt.value}
+            disabled={opt.disabled}
+            className="bg-gray-[#F2F2F2]"
+          >
             {opt.label}
           </Option>
         ))}
