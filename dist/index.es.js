@@ -24015,7 +24015,7 @@ function IM({
   const l = [
     { label: o, value: "", disabled: !0 },
     ...t
-  ], p = t.length > 5 ? "max-h-60 overflow-y-auto" : "max-h-fit";
+  ], p = t.length > 5 ? "max-h-60 overflow-y-auto custom-scrollbar" : "max-h-fit";
   return /* @__PURE__ */ tr("div", { className: `w-full ${a}`, children: [
     e && /* @__PURE__ */ Ce("label", { className: "block mb-1 text-sm text-white/80", children: e }),
     /* @__PURE__ */ Ce(

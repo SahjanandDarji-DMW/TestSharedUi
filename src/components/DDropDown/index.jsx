@@ -1,5 +1,5 @@
 import { Select, Option } from "@material-tailwind/react";
-
+import "../DSidebarItem/Scrollbar.css";
 export function DDropDown({
   label = "Select Option",
   options = [],
@@ -16,7 +16,9 @@ export function DDropDown({
 
   // Scroll if more than 5 options (excluding placeholder)
   const scrollClass =
-    options.length > 5 ? "max-h-60 overflow-y-auto" : "max-h-fit";
+    options.length > 5
+      ? "max-h-60 overflow-y-auto custom-scrollbar"
+      : "max-h-fit";
 
   return (
     <div className={`w-full ${className}`}>
