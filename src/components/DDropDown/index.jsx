@@ -31,7 +31,7 @@ export function DDropDown({
         label={value ? undefined : placeholder} // Show placeholder only when no value
         className="!border !border-white/20 !rounded-xl !bg-white/10 !backdrop-blur-md !text-white focus:!border-white/30"
         labelProps={{
-          className: "text-white/50",
+          className: "hidden",
         }}
         menuProps={{
           className: `bg-gray-[#F2F2F2] backdrop-blur-md text-white rounded-md ${scrollClass}`,
