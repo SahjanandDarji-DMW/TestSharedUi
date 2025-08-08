@@ -1,1 +1,6 @@
 @import "tailwindcss";
+body{
+    background-image: url("https://img.freepik.com/premium-photo/creative-abstract-background-wallpaper_98870-408.jpg?w=1060");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

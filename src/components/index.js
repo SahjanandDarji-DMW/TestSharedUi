@@ -7,6 +7,7 @@ import { SidebarItem } from "./DSidebarItem/index";
 import { Menu } from "./DSidebarItem/Menu";
 import { DPopOver } from "./DpopOver/index";
 import { DDropDown } from "./DDropDown/index";
+import { DForms } from "./DForms/index";
 
 export {
   ButtonSheard,
@@ -18,4 +19,5 @@ export {
   Menu,
   DDropDown,
   DPopOver,
+  DForms,
 };
