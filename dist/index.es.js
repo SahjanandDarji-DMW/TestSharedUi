@@ -24021,12 +24021,12 @@ function IM({
         value: r,
         onChange: n,
         label: o,
-        className: "!border !border-transparent focus:!border-white !rounded-xl !bg-white/10 !backdrop-blur-md !text-white !shadow-none placeholder:!opacity-100 transition-all duration-200",
+        className: "!border !border-transparent focus:!border-white !rounded-xl !bg-white/10 backdrop-blur-sm !text-white font-bold !shadow-none placeholder:!opacity-100 transition-all duration-200",
         labelProps: {
-          className: "text-white/50"
+          className: "text-white/50 font-bold"
         },
         menuProps: {
-          className: `bg-gray-[#F2F2F2] backdrop-blur-md text-white rounded-md ${l}`
+          className: `bg-gray-[#F2F2F2] backdrop-blur-lg text-md  text-white font-bold rounded-md ${l}`
         },
         containerProps: {
           className: "!border-none !shadow-none"
