@@ -5,6 +5,7 @@ import { GlassButton } from "./Button/GlassButton";
 import { NavTab } from "./NavTabs/NavTab";
 import { SidebarItem } from "./DSidebarItem/index";
 import { Menu } from "./DSidebarItem/Menu";
+import { DPopOver } from "./DpopOver/index";
 import { DDropDown } from "./DDropDown/index";
 
 export {
@@ -16,4 +17,5 @@ export {
   SidebarItem,
   Menu,
   DDropDown,
+  DPopOver,
 };
