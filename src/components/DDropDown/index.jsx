@@ -11,7 +11,6 @@ export function DDropDown({
     options.length > 3
       ? "max-h-40 overflow-y-auto custom-scrollbar"
       : "max-h-fit";
-  console.log("value", value);
   return (
     <div className={`w-full ${className}`}>
       {label && (
@@ -19,11 +18,7 @@ export function DDropDown({
       )}
       <Select
         value={value}
-        onChange={(val) => {
-          onChange(val);
-          console.log("Oncahnge.>", val);
-        }}
-        placeholder={placeholder}
+        onChange={(val) => onChange(val)}
         className="!border !border-transparent focus:!border-white !rounded-xl !bg-white/10 backdrop-blur-sm !text-white font-bold !shadow-none placeholder:!opacity-100 transition-all duration-200 placeholder:text-white"
         labelProps={{
           className:
@@ -36,9 +31,6 @@ export function DDropDown({
           className: "!border-none !shadow-none",
         }}
       >
-        <Option key={-1} value={placeholder}>
-          {placeholder}
-        </Option>
         {options.map((opt, idx) => (
           <Option key={idx} value={opt.value}>
             {opt.label}

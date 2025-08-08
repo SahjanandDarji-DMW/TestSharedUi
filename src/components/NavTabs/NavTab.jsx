@@ -18,7 +18,7 @@ export function NavTab({ tabs, avatarUrl, tabTextColor }) {
     <div className="w-full max-w-5xl mx-auto mt-10">
       <Tabs value={activeTab}>
         <TabsHeader
-          className="rounded-xl backdrop-blur-md bg-gray-[F2F2F2] border border-white/10 p-2 shadow-md flex items-center justify-between "
+          className="rounded-xl backdrop-blur-md bg-gray-[F2F2F2] border border-whi te/10 p-2 shadow-md flex items-center justify-between "
           indicatorProps={{
             className: `bg-transparent border-b-2 ${tabTextColor} shadow-none rounded-none`,
           }}
@@ -47,7 +47,7 @@ export function NavTab({ tabs, avatarUrl, tabTextColor }) {
 
             {/* Search Input */}
             <div
-              className={`flex items-center gap-2 transition-all duration-300 ${
+              className={`flex items-center gap-2 w-64 transition-all duration-300 ${
                 searchMode ? "w-full" : "w-64"
               }`}
             >
