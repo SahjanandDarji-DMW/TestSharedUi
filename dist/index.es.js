@@ -24012,25 +24012,40 @@ function _t({ icon: e, label: t, badge: r }) {
   ] });
 }
 function uD() {
-  return /* @__PURE__ */ Pe("div", { className: "w-64 h-[500px] bg-gray-[#F2F2F2] backdrop-blur-md text-white p-4 rounded-xl shadow-lg", children: /* @__PURE__ */ rr("div", { className: "h-full overflow-y-auto custom-scrollbar pr-2", children: [
-    /* @__PURE__ */ rr("div", { className: "mb-6", children: [
-      /* @__PURE__ */ Pe("h2", { className: "text-lg font-semibold text-gray-200 mb-2", children: "Apps" }),
-      /* @__PURE__ */ rr("ul", { className: "space-y-2", children: [
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition", children: /* @__PURE__ */ Pe(_t, { icon: Wj, label: "All Apps" }) }),
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: Pj, label: "Updates", badge: "3" }) })
+  return /* @__PURE__ */ Pe("div", { className: "w-[50%] md:w-64 h-[400px] md:h-[500px] bg-gray-[#F2F2F2] border border-white/20 backdrop-blur-md text-white p-3 rounded-xl shadow-lg text-xs md:text-sm", children: /* @__PURE__ */ rr("div", { className: "h-full overflow-y-auto scroll-smooth custom-scrollbar pr-1 md:pr-2", children: [
+    /* @__PURE__ */ rr("div", { className: "mb-3 md:mb-6", children: [
+      /* @__PURE__ */ Pe("h2", { className: "text-sm md:text-lg font-semibold text-gray-200 mb-1 md:mb-2", children: "Apps" }),
+      /* @__PURE__ */ rr("ul", { className: "space-y-1 md:space-y-2", children: [
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(_t, { icon: Wj, label: "All Apps", iconSize: "xs" }) }),
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(
+          _t,
+          {
+            icon: Pj,
+            label: "Updates",
+            badge: "3",
+            iconSize: "xs"
+          }
+        ) })
       ] })
     ] }),
     /* @__PURE__ */ rr("div", { children: [
-      /* @__PURE__ */ Pe("h2", { className: "text-lg font-semibold text-gray-200 mb-2", children: "Categories" }),
-      /* @__PURE__ */ rr("ul", { className: "space-y-2", children: [
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: Aj, label: "Photography" }) }),
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: Ej, label: "Graphic Design" }) }),
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: jj, label: "Video" }) }),
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: Lj, label: "Music" }) }),
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: Rj, label: "Development" }) }),
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: Mj, label: "Education" }) }),
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: Nj, label: "Analytics" }) }),
-        /* @__PURE__ */ Pe("li", { className: "rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md  transition", children: /* @__PURE__ */ Pe(_t, { icon: zj, label: "Gaming" }) })
+      /* @__PURE__ */ Pe("h2", { className: "text-sm md:text-lg font-semibold text-gray-200 mb-1 md:mb-2", children: "Categories" }),
+      /* @__PURE__ */ rr("ul", { className: "space-y-1 md:space-y-2", children: [
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(_t, { icon: Aj, label: "Photography", iconSize: "xs" }) }),
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(
+          _t,
+          {
+            icon: Ej,
+            label: "Graphic Design",
+            iconSize: "xs"
+          }
+        ) }),
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(_t, { icon: jj, label: "Video", iconSize: "xs" }) }),
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(_t, { icon: Lj, label: "Music", iconSize: "xs" }) }),
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(_t, { icon: Rj, label: "Development", iconSize: "xs" }) }),
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(_t, { icon: Mj, label: "Education", iconSize: "xs" }) }),
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(_t, { icon: Nj, label: "Analytics", iconSize: "xs" }) }),
+        /* @__PURE__ */ Pe("li", { className: "rounded-md md:rounded-lg hover:bg-white/10 cursor-pointer backdrop-blur-md transition px-1 py-0.5 md:px-2 md:py-1", children: /* @__PURE__ */ Pe(_t, { icon: zj, label: "Gaming", iconSize: "xs" }) })
       ] })
     ] })
   ] }) });
