@@ -1,0 +1,159 @@
+[
+  {
+    "fieldName": "to",
+    "hidden": false,
+    "seqNo": 0,
+    "option_values": [],
+    "readOnly": false,
+    "section": "Email",
+    "childNodeName": "",
+    "label": "To Email",
+    "type": "EMAIL",
+    "isComplex": false
+  },
+  {
+    "fieldName": "subject",
+    "hidden": false,
+    "seqNo": 1,
+    "option_values": [],
+    "readOnly": false,
+    "section": "Email",
+    "childNodeName": "",
+    "label": "Subject",
+    "type": "TEXT",
+    "isComplex": false
+  },
+  {
+    "fieldName": "body",
+    "hidden": false,
+    "seqNo": 2,
+    "option_values": [],
+    "readOnly": false,
+    "section": "Email",
+    "childNodeName": "",
+    "label": "Body",
+    "type": "TEXT",
+    "isComplex": false
+  },
+  {
+    "fieldName": "gender",
+    "hidden": false,
+    "seqNo": 0,
+    "option_values": [
+      {
+        "value": "Male",
+        "key": "M"
+      },
+      {
+        "value": "Female",
+        "key": "F"
+      },
+      {
+        "value": "Other",
+        "key": "O"
+      }
+    ],
+    "readOnly": false,
+    "section": "Email",
+    "childNodeName": "",
+    "label": "gender",
+    "type": "RADIO",
+    "isComplex": false
+  },
+  {
+    "fieldName": "skillSet",
+    "hidden": false,
+    "seqNo": 0,
+    "option_values": [
+      {
+        "value": "Java",
+        "key": "JAVA"
+      },
+      {
+        "value": "React",
+        "key": "REACT"
+      },
+      {
+        "value": "Unix",
+        "key": "UNIX"
+      }
+    ],
+    "readOnly": false,
+    "section": "Email",
+    "childNodeName": "",
+    "label": "skills",
+    "type": "CHECKBOX",
+    "isComplex": false
+  },
+  {
+    "fieldName": "attachmentList",
+    "attachments": [
+      {
+        "fieldName": "file",
+        "hidden": false,
+        "seqNo": 0,
+        "option_values": [],
+        "readOnly": false,
+        "section": "Attachment",
+        "childNodeName": "",
+        "label": "file",
+        "type": "FILE",
+        "isComplex": false
+      },
+      {
+        "fieldName": "fileName",
+        "hidden": true,
+        "seqNo": 0,
+        "option_values": [],
+        "readOnly": false,
+        "section": "Attachment",
+        "childNodeName": "",
+        "label": "file_name",
+        "type": "TEXT",
+        "isComplex": false
+      },
+      {
+        "fieldName": "fileType",
+        "hidden": true,
+        "seqNo": 0,
+        "option_values": [
+          {
+            "value": ".pdf",
+            "key": "PDF"
+          },
+          {
+            "value": ".xlsx",
+            "key": "XLS"
+          },
+          {
+            "value": ".jpg",
+            "key": "JPG"
+          },
+          {
+            "value": ".jpeg",
+            "key": "JPEG"
+          },
+          {
+            "value": ".png",
+            "key": "PNG"
+          }
+        ],
+        "readOnly": false,
+        "section": "Attachment",
+        "childNodeName": "",
+        "label": "file_type",
+        "type": "SELECT",
+        "isComplex": false
+      }
+    ],
+    "hidden": false,
+    "seqNo": 3,
+    "option_values": [],
+    "readOnly": false,
+    "section": "",
+    "childNodeName": "attachments",
+    "label": "Attachment(s)",
+    "type": "NONE",
+    "isComplex": true
+  }
+]

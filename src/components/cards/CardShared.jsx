@@ -70,7 +70,7 @@ export function CardShared({
 
   // ✅ Original Vertical Layout
   return (
-    <div className="bg-gradient-to-r bg-gray-[F2F2F2] backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-80">
+    <div className=" bg-gray-[#F2F2F2] backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-lg w-full">
       {/* Icon and Title */}
       <div className="flex items-center space-x-3 mb-3">
         <div className="bg-[#2d004d] p-2 rounded-lg text-white">{icon}</div>
